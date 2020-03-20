@@ -1,0 +1,19 @@
+package black.mesa.serviceconsumer.controller;
+
+import black.mesa.serviceconsumer.service.HelloConsumerService;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+@RequestMapping("/api/v1/hello-consumer")
+public class HelloConsumerController {
+    @Autowired
+    private HelloConsumerService helloConsumerService;
+
+    @RequestMapping("")
+    public String remoteHello() {
+        return helloConsumerService.hello();
+    }
+
+}

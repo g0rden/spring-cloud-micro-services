@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: service-producer
+
+server:
+  port: 8011
+
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    fetch-registry: true
+    register-with-eureka: true
+    serviceUrl:
+      defaultZone: http://localhost:8000/eureka/

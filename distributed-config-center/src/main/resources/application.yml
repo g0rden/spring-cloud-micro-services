@@ -1,0 +1,15 @@
+spring:
+  application:
+    name: distributed-config-center
+
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/g0rden/spring-cloud-micro-services/tree/master/
+          searchPaths: distributed-config-files
+          username: black.mesa.gorden.freeman@gmail.com
+          password: p@ssw0rd3465
+
+server:
+  port: 9876
