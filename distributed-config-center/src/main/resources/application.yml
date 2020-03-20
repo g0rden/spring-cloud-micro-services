@@ -6,8 +6,8 @@ spring:
     config:
       server:
         git:
-          uri: https://github.com/g0rden/spring-cloud-micro-services/tree/master/
-          searchPaths: distributed-config-files
+          uri: https://github.com/g0rden/config-center-files.git
+          searchPaths: distributed-config-center/config-repo
           username: black.mesa.gorden.freeman@gmail.com
           password: p@ssw0rd3465
 
